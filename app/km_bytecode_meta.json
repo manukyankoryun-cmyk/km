@@ -1,0 +1,44 @@
+{
+  "at": "2026-09-18T11:48:34.087Z",
+  "electronExe": "C:\\Users\\PUBG\\OneDrive\\Desktop\\KM_1.009.4_SEPARATE_FORMAL_DATA_PER_GRAPH\\KM_1.009.4_SEPARATE_FORMAL_DATA_PER_GRAPH\\payload\\runtime\\x64\\electron.exe",
+  "versions": {
+    "node": "16.17.1",
+    "v8": "10.8.168.25-electron.0",
+    "electron": "22.3.27"
+  },
+  "expected": {
+    "electron": "22.3.27",
+    "nodePrefix": "16.17",
+    "v8Prefix": "10.8.168"
+  },
+  "engine": "electron",
+  "host": "electron-as-node",
+  "compiled": [
+    "main.js",
+    "km_backend.js",
+    "km_guard.js",
+    "km_license.js",
+    "km_net.js",
+    "km_lan_sync.js",
+    "km_bot_knowledge.js",
+    "km_crypto_store.js",
+    "km_secrets_load.js",
+    "km_security_secrets.js",
+    "km_owner_vault.js",
+    "km_library.js",
+    "km_bot_rag.js",
+    "km_gemini_config.js",
+    "office_backend.js",
+    "km_edge_tts.js",
+    "km_pdf_translate.js",
+    "km_pdf_text.js",
+    "km_fonts.js",
+    "km_version.js",
+    "km_help_bot_core.js",
+    "km_domain_router.js",
+    "km_text_clean.js",
+    "km_sqlite_bridge.js",
+    "km_conversations.js",
+    "km_retention.js"
+  ]
+}

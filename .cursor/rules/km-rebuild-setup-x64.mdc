@@ -1,0 +1,17 @@
+---
+description: Rebuild KM_Setup_x64.exe after every KM app addition
+alwaysApply: true
+---
+
+# Rebuild x64 Setup after every addition
+
+After any change to KM app files (`app/**`), bump Թարմացում, run `writeIntegrity`, then rebuild **only** `dist\KM_Setup_x64.exe`.
+
+```powershell
+powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File ".\BUILD_SETUP.ps1"
+```
+
+- Do not rebuild x86 Setup unless the user asks.
+- Never pack `app\KM_UPDATE_ORIGIN` into Setup.
+- Do not copy to `E:\2\KM` unless the user asks.
+- Do not skip this rebuild after an app addition.

@@ -1,0 +1,11 @@
+{
+  "role": "client",
+  "serverUrl": "http://192.168.1.100:18094",
+  "wsUrl": "ws://192.168.1.100:18096",
+  "autoReconnect": true,
+  "reconnectBaseMs": 3000,
+  "reconnectMaxMs": 60000,
+  "realtimeSync": true,
+  "bindHost": "0.0.0.0",
+  "wsPort": 18096
+}

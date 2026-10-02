@@ -1,0 +1,65 @@
+KM 1.009.4 — Windows 7 Smoke Test Checklist
+==========================================
+
+Նախապատրաստում (մեկ անգամ)
+---------------------------
+[ ] Windows 7 SP1 (6.1.7601) տեղադրված
+[ ] Platform Update for Windows 7 (KB2670838) տեղադրված
+[ ] .NET Framework 4.5+ (կամ 4.8) տեղադրված
+[ ] Microsoft Office 2010+ (Word/Excel — փոխակերպման/Excel export փորձարկության համար)
+[ ] Էկրան՝ նվազագույն 1024×768, ավելի լավ 1366×768
+
+Տեղադրում
+---------
+[ ] KM_Setup_x64.exe գործարկել (64-bit Win7) կամ KM_Setup_x86.exe (32-bit Win7)
+[ ] Տեղադրումն ավարտվեց առանց սխալի
+[ ] Desktop «KM» shortcut-ը ստեղծվեց
+[ ] %LOCALAPPDATA%\Programs\KM\runtime\KM.exe գոյություն ունի
+
+Գործարկում և GPU (software render)
+----------------------------------
+[ ] KM.exe բացվում է առանց ս белого/սև էկranի
+[ ] %LOCALAPPDATA%\KM\UserData\startup.log-ում կա տող.
+    «RENDER: software mode (Win7/8/8.1 stability — GPU acceleration off)»
+[ ] Sidebar + Գլխավոր էջը նորմալ երևում են
+
+Հիմնական ֆունկցիոնալ
+--------------------
+[ ] Անձնակազմ — ավելացնել/խմբագրել/CSV
+[ ] Վերակարգի պլանավորում — կառուցել, 1 օր նշել «Հերթապահ», պահպանել
+[ ] Վերակարգeri տեսակներ — բացել, պланավորում
+[ ] Արձակուրդ — ավելացնել, գրաֆիկում արտացոլվում է
+[ ] Պահպանել → KM-ը փակել → նորից բացել → տվյալները մնացել
+
+Տպում
+-----
+[ ] Schedule → «Տպել» → preview բացվում է
+[ ] Ctrl+P կամ Enter → Windows print dialog (կամ PDF)
+[ ] Formal block-ները preview-ում տեսանելի են
+
+Office (եթե Office տեղադրված է)
+--------------------------------
+[ ] Word → PDF փոխակերդում (Կառավարում)
+[ ] Schedule → Excel export
+
+Multi-monitor / DPI (եթե հասանելի է)
+--------------------------------------
+[ ] 125% DPI — UI-ն կարդացվող է
+[ ] 2-րդ մոնիտոր disconnect → KM պատուհանը դեռ տեսանելի
+
+Արխիվ
+-----
+[ ] «Ընթացիկ արխիվ» ստեղծել
+[ ] «Դիտել» readonly modal + formal blocks
+
+Անջատում
+--------
+[ ] Uninstall → UserData-ն (%LOCALAPPDATA%\KM\UserData) մնացել
+
+Սխալի դեպքում
+--------------
+1. Ստուգել startup.log
+2. Win10/11-ում GPU անջատելու համար՝ ստեղծել ֆայլ.
+   %LOCALAPPDATA%\KM\UserData\force_software_render.txt
+   (կամ KM_DISABLE_GPU=1 environment variable)
+3. Կրկին գործարկել KM.exe

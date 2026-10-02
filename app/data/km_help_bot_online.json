@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "note": "Loaded when online; merges into local KB",
+  "topics": [
+    {
+      "id": "updates",
+      "title": {
+        "hy": "Թարմացումներ",
+        "ru": "Обновления",
+        "en": "Updates"
+      },
+      "keywords": [
+        "թարմացում",
+        "обновлен",
+        "update",
+        "upgrade",
+        "версия"
+      ],
+      "answer": {
+        "hy": [
+          "Թարմացումները տեղադրում է ադմինը՝ ցանցով կամ Setup-ով։",
+          "Օգտատերը կարող է ստուգել թարմացումը, եթե թույլատրված է։"
+        ],
+        "ru": [
+          "Обновления ставит админ по сети или Setup.",
+          "Пользователь может проверить обновление, если разрешено."
+        ],
+        "en": [
+          "Admins install updates via network or Setup.",
+          "Users can check for updates when allowed."
+        ]
+      },
+      "actions": []
+    },
+    {
+      "id": "security",
+      "title": {
+        "hy": "Անվտանգություն",
+        "ru": "Безопасность",
+        "en": "Security"
+      },
+      "keywords": [
+        "անվտանգ",
+        "գաղտնաբառ",
+        "безопас",
+        "пароль",
+        "password",
+        "security"
+      ],
+      "answer": {
+        "hy": [
+          "Մի տվեք ադմինի գաղտնաբառը։",
+          "Օգտատերերին տվեք միայն անհրաժեշտ էջերի իրավունքները։"
+        ],
+        "ru": [
+          "Не передавайте пароль администратора.",
+          "Выдавайте пользователям только нужные права страниц."
+        ],
+        "en": [
+          "Do not share the admin password.",
+          "Grant users only the page rights they need."
+        ]
+      },
+      "actions": []
+    },
+    {
+      "id": "troubleshooting",
+      "title": {
+        "hy": "Խնդիրների լուծում",
+        "ru": "Устранение проблем",
+        "en": "Troubleshooting"
+      },
+      "keywords": [
+        "չի բացվում",
+        "սխալ",
+        "ошибка",
+        "error",
+        "bug",
+        "не работает",
+        "չի աշխատում"
+      ],
+      "answer": {
+        "hy": [
+          "Փակեք և նորից բացեք KM-ը։",
+          "Ստուգեք՝ արդյոք ունեք էջի իրավունք։",
+          "Ադմին՝ ստուգեք Setup/թարմացում և պահուստ։"
+        ],
+        "ru": [
+          "Закройте и снова откройте KM.",
+          "Проверьте права страницы.",
+          "Админ: проверьте Setup/обновление и резервную копию."
+        ],
+        "en": [
+          "Close and reopen KM.",
+          "Check that you have page rights.",
+          "Admin: verify Setup/update and backups."
+        ]
+      },
+      "actions": []
+    }
+  ]
+}

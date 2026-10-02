@@ -1,0 +1,1487 @@
+{
+    "version":  2,
+    "ui":  {
+               "hy":  {
+                          "title":  "KM օգնական բոտ",
+                          "lead":  "Հարցրեք հայերեն, ռուսերեն կամ անգլերեն։ Offline Local LLM (Ollama) կամ Smart Engine՝ խոսակցություն և ուղղորդում։",
+                          "placeholder":  "Գրեք ազատ… օր.՝ օգնիր ինձ / բացիր գրաֆիկ / հրաման 196892",
+                          "send":  "Ուղարկել",
+                          "close":  "Փակել",
+                          "clear":  "Մաքրել",
+                          "clearHistory":  "Մաքրել պատմությունը",
+                          "loading":  "Բեռնվում է…",
+                          "loadFail":  "Չհաջողվեց բեռնել գիտելիքների բազան",
+                          "openFail":  "Չհաջողվեց բացել բաժինը",
+                          "open":  "Բացել",
+                          "online":  "Online",
+                          "offline":  "Offline",
+                          "smart":  "AI Smart Engine",
+                          "llmOnline":  "LLM Online",
+                          "localLlm":  "Local LLM",
+                          "shield":  "Shield",
+                          "typing":  "Գրում է…",
+                          "escalate":  "Կապվել ադմինի հետ",
+                          "smartMode":  "Offline Local LLM (Ollama) կամ Smart Engine՝ խոսակցություն, RAG և բաժինների բացում։",
+                          "onlineMode":  "Կապ կա՝ լրացուցիչ գիտելիքները միացված են (եթե հասանելի են)։",
+                          "offlineMode":  "Աշխատում է offline՝ տեղական AI գիտելիքների բազայով։",
+                          "welcome":  "Ես KM արհեստական բանականության օգնականն եմ։ Կարող եմ խոսել ձեզ հետ, բացատրել բաժինները և ուղղորդել։ Գրեք ազատ՝ օր. «օգնիր ինձ», «բացիր գրաֆիկ» կամ հրամանի համարը՝ «196892»։",
+                          "fallback":  "Ես այստեղ եմ։ Կարող եմ պատասխանել ընդհանուր հարցերին և անհրաժեշտության դեպքում օգնել նաև KM-ում։ Պարզապես գրեք ձեր հարցը։",
+                          "openBot":  "Օգնական բոտ",
+                          "closeBot":  "Փակել բոտը"
+                      },
+               "ru":  {
+                          "title":  "KM помощник",
+                          "lead":  "Спрашивайте на армянском, русском или английском. Локальный AI Smart Engine: диалог и навигация.",
+                          "placeholder":  "Пишите свободно… напр.: помоги мне / открой график",
+                          "send":  "Отправить",
+                          "close":  "Закрыть",
+                          "clear":  "Очистить",
+                          "clearHistory":  "Очистить историю",
+                          "loading":  "Загрузка…",
+                          "loadFail":  "Не удалось загрузить базу знаний",
+                          "openFail":  "Не удалось открыть раздел",
+                          "open":  "Открыть",
+                          "online":  "Online",
+                          "offline":  "Offline",
+                          "smart":  "AI Smart Engine",
+                          "llmOnline":  "LLM Online",
+                          "localLlm":  "Local LLM",
+                          "shield":  "Shield",
+                          "typing":  "Печатает…",
+                          "escalate":  "Связаться с админом",
+                          "smartMode":  "Offline Local LLM (Ollama) или Smart Engine: диалог, RAG и открытие разделов.",
+                          "onlineMode":  "Есть сеть — доп. знания подключены (если доступны).",
+                          "offlineMode":  "Работает offline — локальная AI база знаний.",
+                          "welcome":  "Я ИИ-помощник KM. Могу говорить с вами, объяснять разделы и направлять. Пишите свободно — например «помоги мне» или «как построить график».",
+                          "fallback":  "Я рядом. Могу отвечать на общие вопросы и при необходимости помочь по KM. Просто напишите ваш вопрос.",
+                          "openBot":  "Помощник",
+                          "closeBot":  "Закрыть помощника"
+                      },
+               "en":  {
+                          "title":  "KM Help Bot",
+                          "lead":  "Ask in Armenian, Russian, or English. Local AI Smart Engine: conversation and guidance.",
+                          "placeholder":  "Write freely… e.g. help me / open schedule",
+                          "send":  "Send",
+                          "close":  "Close",
+                          "clear":  "Clear",
+                          "clearHistory":  "Clear chat history",
+                          "loading":  "Loading…",
+                          "loadFail":  "Failed to load knowledge base",
+                          "openFail":  "Could not open section",
+                          "open":  "Open",
+                          "online":  "Online",
+                          "offline":  "Offline",
+                          "smart":  "AI Smart Engine",
+                          "llmOnline":  "LLM Online",
+                          "localLlm":  "Local LLM",
+                          "shield":  "Shield",
+                          "typing":  "Typing…",
+                          "escalate":  "Contact admin",
+                          "smartMode":  "Offline Local LLM (Ollama) or Smart Engine: conversation, RAG, and opening sections.",
+                          "onlineMode":  "Online — extra knowledge attached when available.",
+                          "offlineMode":  "Offline — local AI knowledge base.",
+                          "welcome":  "I am the KM AI assistant. I can talk with you, explain sections, and guide you. Write freely — e.g. “help me” or “how to build a schedule”.",
+                          "fallback":  "I’m here. I can answer general questions and help with KM when needed. Just write your question.",
+                          "openBot":  "Help bot",
+                          "closeBot":  "Close help bot"
+                      }
+           },
+    "intents":  {
+                    "greeting":  {
+                                     "patterns":  [
+                                                      "բարև",
+                                                      "բարեև",
+                                                      "ողջույն",
+                                                      "հելո",
+                                                      "привет",
+                                                      "здравствуй",
+                                                      "здравствуйте",
+                                                      "добрый день",
+                                                      "добрый вечер",
+                                                      "доброе утро",
+                                                      "hello",
+                                                      "hey",
+                                                      "hi",
+                                                      "good morning",
+                                                      "good evening"
+                                                  ],
+                                     "replies":  {
+                                                     "hy":  [
+                                                                "Բարև{name}։ Ինչո՞վ օգնել այսօր՝ գրաֆիկ, անձնակազմ, թե այլ բաժին։"
+                                                            ],
+                                                     "ru":  [
+                                                                "Здравствуйте{name}! Чем помочь: график, личный состав или другой раздел?"
+                                                            ],
+                                                     "en":  [
+                                                                "Hello{name}! How can I help — schedule, personnel, or another section?"
+                                                            ]
+                                                 }
+                                 },
+                    "thanks":  {
+                                   "patterns":  [
+                                                    "շնորհակալ",
+                                                    "մերսի",
+                                                    "спасибо",
+                                                    "благодар",
+                                                    "thanks",
+                                                    "thank you",
+                                                    "thx"
+                                                ],
+                                   "replies":  {
+                                                   "hy":  [
+                                                              "Խնդրեմ։ Եթե ուրիշ հարց ունեք՝ գրեք։",
+                                                              "Հաճույքով։ Կարող եմ նաև բացել համապատասխան բաժինը։"
+                                                          ],
+                                                   "ru":  [
+                                                              "Пожалуйста! Если есть ещё вопрос — пишите.",
+                                                              "Рад помочь. Могу открыть нужный раздел."
+                                                          ],
+                                                   "en":  [
+                                                              "You’re welcome! Ask anything else anytime.",
+                                                              "Glad to help. I can also open the right section."
+                                                          ]
+                                               }
+                               },
+                    "bye":  {
+                                "patterns":  [
+                                                 "ցտեսություն",
+                                                 "հաջողություն",
+                                                 "ցտես",
+                                                 "пока",
+                                                 "до свидания",
+                                                 "bye",
+                                                 "goodbye",
+                                                 "see you"
+                                             ],
+                                "replies":  {
+                                                "hy":  [
+                                                           "Հաջողություն։ Կարող եք նորից բացել բոտը «?» կոճակով։"
+                                                       ],
+                                                "ru":  [
+                                                           "Удачи! Снова откройте бота кнопкой «?»."
+                                                       ],
+                                                "en":  [
+                                                           "Goodbye! Open the bot again with the “?” button."
+                                                       ]
+                                            }
+                            },
+                    "who":  {
+                                "patterns":  [
+                                                 "ով ես",
+                                                 "ինչ ես",
+                                                 "кто ты",
+                                                 "что ты",
+                                                 "who are you",
+                                                 "what are you"
+                                             ],
+                                "replies":  {
+                                                "hy":  [
+                                                           "Ես KM տեղական օգնական բոտն եմ՝ առանց ինտերնետի էլ աշխատում եմ, իսկ online-ում կարող եմ լրացուցիչ գիտելիք միացնել։"
+                                                       ],
+                                                "ru":  [
+                                                           "Я локальный помощник KM: работаю и без интернета, а онлайн могу подключить доп. знания."
+                                                       ],
+                                                "en":  [
+                                                           "I am the KM local help bot: I work offline, and can attach extra knowledge online."
+                                                       ]
+                                            }
+                            },
+                    "how":  {
+                                "patterns":  [
+                                                 "ինչպես ես",
+                                                 "как дела",
+                                                 "how are you"
+                                             ],
+                                "replies":  {
+                                                "hy":  [
+                                                           "Լավ եմ, շնորհակալություն։ Պատրաստ եմ օգնել KM-ի հարցերով։"
+                                                       ],
+                                                "ru":  [
+                                                           "Хорошо, спасибо! Готов помочь по KM."
+                                                       ],
+                                                "en":  [
+                                                           "I am fine, thank you! Ready to help with KM."
+                                                       ]
+                                            }
+                            },
+                    "help":  {
+                                 "patterns":  [
+                                                  "օգնիր",
+                                                  "օգնել",
+                                                  "օգնություն",
+                                                  "կարող ես ինձ",
+                                                  "կարող ես օգնել",
+                                                  "դու կարող ես",
+                                                  "ինչով կարող",
+                                                  "помоги",
+                                                  "помочь",
+                                                  "можешь помочь",
+                                                  "ты можешь",
+                                                  "help me",
+                                                  "can you help",
+                                                  "please help",
+                                                  "i need help",
+                                                  "need help"
+                                              ],
+                                 "replies":  {
+                                                 "hy":  [
+                                                            "Այո, պատրաստ եմ օգնել։ Ասեք՝ գրաֆիկ, անձնակազմ, հաշվառում, թե այլ բաժին։"
+                                                        ],
+                                                 "ru":  [
+                                                            "Да, готов помочь. Скажите: график, личный состав, учёт или другой раздел."
+                                                        ],
+                                                 "en":  [
+                                                            "Yes, I can help. Tell me: schedule, personnel, accounting, or another section."
+                                                        ]
+                                             }
+                             }
+                },
+    "suggestions":  {
+                        "hy":  [
+                                   {
+                                       "label":  "Ուսումնասիրել համակարգը",
+                                       "q":  "ուսումնասիրել համակարգը"
+                                   },
+                                   {
+                                       "label":  "Սկիզբ",
+                                       "q":  "ինչպես սկսել"
+                                   },
+                                   {
+                                       "label":  "Անձնակազմ",
+                                       "q":  "անձնակազմ"
+                                   },
+                                   {
+                                       "label":  "Գրաֆիկ",
+                                       "q":  "վերակարգի գրաֆիկ"
+                                   },
+                                   {
+                                       "label":  "Հաշվառում",
+                                       "q":  "հաշվառում"
+                                   },
+                                   {
+                                       "label":  "Գրադարան",
+                                       "q":  "գրադարան"
+                                   },
+                                   {
+                                       "label":  "Իրավաբանական",
+                                       "q":  "իրավաբանական անկյուն"
+                                   },
+                                   {
+                                       "label":  "Իրավունքներ",
+                                       "q":  "զինծառայողի իրավունքներ"
+                                   },
+                                   {
+                                       "label":  "USB / ցանց",
+                                       "q":  "usb համաժամեցում"
+                                   },
+                                   {
+                                       "label":  "Էջերի իրավունքներ",
+                                       "q":  "էջերի իրավունքներ"
+                                   },
+                                   {
+                                       "label":  "Լեզու",
+                                       "q":  "լեզու փոխել"
+                                   }
+                               ],
+                        "ru":  [
+                                   {
+                                       "label":  "Обзор системы",
+                                       "q":  "обзор системы"
+                                   },
+                                   {
+                                       "label":  "Начать",
+                                       "q":  "как начать"
+                                   },
+                                   {
+                                       "label":  "Личный состав",
+                                       "q":  "личный состав"
+                                   },
+                                   {
+                                       "label":  "График",
+                                       "q":  "график нарядов"
+                                   },
+                                   {
+                                       "label":  "Учёт",
+                                       "q":  "учёт"
+                                   },
+                                   {
+                                       "label":  "Библиотека",
+                                       "q":  "библиотека"
+                                   },
+                                   {
+                                       "label":  "Юридический",
+                                       "q":  "юридический раздел"
+                                   },
+                                   {
+                                       "label":  "Права",
+                                       "q":  "права военнослужащего"
+                                   },
+                                   {
+                                       "label":  "USB / сеть",
+                                       "q":  "usb синхронизация"
+                                   },
+                                   {
+                                       "label":  "Права страниц",
+                                       "q":  "права страниц"
+                                   },
+                                   {
+                                       "label":  "Язык",
+                                       "q":  "сменить язык"
+                                   }
+                               ],
+                        "en":  [
+                                   {
+                                       "label":  "System overview",
+                                       "q":  "system overview"
+                                   },
+                                   {
+                                       "label":  "Getting started",
+                                       "q":  "how to start"
+                                   },
+                                   {
+                                       "label":  "Personnel",
+                                       "q":  "personnel"
+                                   },
+                                   {
+                                       "label":  "Schedule",
+                                       "q":  "duty schedule"
+                                   },
+                                   {
+                                       "label":  "Accounting",
+                                       "q":  "accounting"
+                                   },
+                                   {
+                                       "label":  "Library",
+                                       "q":  "library"
+                                   },
+                                   {
+                                       "label":  "Legal",
+                                       "q":  "legal corner"
+                                   },
+                                   {
+                                       "label":  "Rights",
+                                       "q":  "soldier rights"
+                                   },
+                                   {
+                                       "label":  "USB / network",
+                                       "q":  "usb sync"
+                                   },
+                                   {
+                                       "label":  "Page rights",
+                                       "q":  "page permissions"
+                                   },
+                                   {
+                                       "label":  "Language",
+                                       "q":  "change language"
+                                   }
+                               ]
+                    },
+    "topics":  [
+                   {
+                       "id":  "system_map",
+                       "title":  {
+                                     "hy":  "Ամբողջ համակարգի քարտեզ",
+                                     "ru":  "Обзор всей системы",
+                                     "en":  "Full system map"
+                                 },
+                       "keywords":  [
+                                        "ուսումնասիրել",
+                                        "համակարգ",
+                                        "ամբողջ",
+                                        "քարտեզ",
+                                        "կառուցվածք",
+                                        "бзор",
+                                        "система",
+                                        "карта",
+                                        "overview",
+                                        "system",
+                                        "map",
+                                        "modules",
+                                        "все разделы",
+                                        "բոլոր բաժին",
+                                        "ինքնակրթ",
+                                        "կատարելագործ",
+                                        "բաժին",
+                                        "ենթաբաժին",
+                                        "քարտ",
+                                        "սովորել",
+                                        "self-learn",
+                                        "structure"
+                                    ],
+                       "answer":  {
+                                      "hy":  [
+                                                 "KM-ը offline ծրագիր է՝ Հիմնական, Հաշվառում, Վերակարգերի տեսակներ, Գրադարան, Աշխատանքի գործիքներ, Իրավաբանական անկյուն։",
+                                                 "Օգնական բոտը ուսումնասիրում է բաժինների/ենթաբաժինների ֆայլերն ու արխիվը, Պաշտոնի քարտերը և համալրում իր բառապաշարը։",
+                                                 "Կարող եք հարցնել մոտավոր բառերով՝ բոտը հասկանում է իմաստը, գտնում է հրամանի համարներ, անուններ և ամսաթվեր։",
+                                                 "Հերթականություն՝ անձնակազմ/պաշտոն → վերակարգ → գրաֆիկ → պահպանել/տպել → USB/ցանց։"
+                                             ],
+                                      "ru":  [
+                                                 "KM — offline программа: Главная, Учёт, Виды нарядов, Библиотека, Инструменты, Юридический угол.",
+                                                 "Бот изучает файлы/архивы разделов, карточки должностей и пополняет словарь.",
+                                                 "Можно спрашивать приблизительно — бот понимает смысл, находит номера приказов, имена и даты.",
+                                                 "Порядок: личный состав/должности → наряд → график → сохранить/печать → USB/сеть."
+                                             ],
+                                      "en":  [
+                                                 "KM is offline: Home, Accounting, Duty types, Library, Work tools, Legal corner.",
+                                                 "The bot studies section files/archives, Positions cards, and grows its vocabulary.",
+                                                 "Ask with approximate/misspelled words — it infers meaning and extracts order numbers, names, dates.",
+                                                 "Flow: personnel/positions → duty → schedule → save/print → USB/network."
+                                             ]
+                                  },
+                       "actions":  [
+                                       {
+                                           "label":  {
+                                                         "hy":  "Հիմնական",
+                                                         "ru":  "Главная",
+                                                         "en":  "Home"
+                                                     },
+                                           "page":  "home"
+                                       },
+                                       {
+                                           "label":  {
+                                                         "hy":  "Հաշվառում",
+                                                         "ru":  "Учёт",
+                                                         "en":  "Accounting"
+                                                     },
+                                           "page":  "accounting"
+                                       },
+                                       {
+                                           "label":  {
+                                                         "hy":  "Վերակարգեր",
+                                                         "ru":  "Наряды",
+                                                         "en":  "Duty types"
+                                                     },
+                                           "page":  "dutyTypes"
+                                       },
+                                       {
+                                           "label":  {
+                                                         "hy":  "Գրադարան",
+                                                         "ru":  "Библиотека",
+                                                         "en":  "Library"
+                                                     },
+                                           "page":  "library"
+                                       },
+                                       {
+                                           "label":  {
+                                                         "hy":  "Իրավաբանական",
+                                                         "ru":  "Юридический",
+                                                         "en":  "Legal"
+                                                     },
+                                           "page":  "lawdocs"
+                                       }
+                                   ]
+                   },
+                   {
+                       "id":  "start",
+                       "title":  {
+                                     "hy":  "Ինչպես սկսել",
+                                     "ru":  "Как начать",
+                                     "en":  "How to start"
+                                 },
+                       "keywords":  [
+                                        "սկսել",
+                                        "սկիզբ",
+                                        "մուտք",
+                                        "начать",
+                                        "старт",
+                                        "вход",
+                                        "start",
+                                        "begin",
+                                        "login",
+                                        "first"
+                                    ],
+                       "answer":  {
+                                      "hy":  [
+                                                 "Մուտք՝ Administrator կամ օգտատեր։",
+                                                 "KM լոգոն բացում/փակում է մենյուն։",
+                                                 "Աջ ներքևի «?»՝ օգնական բոտ։",
+                                                 "Առաջին անգամ՝ Անձնակազմ → Վերակարգերի տեսակներ → Պլանավորում։",
+                                                 "Տվյալները պահվում են այս PC-ում։"
+                                             ],
+                                      "ru":  [
+                                                 "Вход: Administrator или пользователь.",
+                                                 "Логотип KM открывает/закрывает меню.",
+                                                 "Кнопка «?» справа внизу — помощник.",
+                                                 "Сначала: Личный состав → Типы нарядов → Планирование.",
+                                                 "Данные хранятся на этом ПК."
+                                             ],
+                                      "en":  [
+                                                 "Sign in as Administrator or user.",
+                                                 "KM logo opens/closes the menu.",
+                                                 "Bottom-right “?” opens the help bot.",
+                                                 "First steps: Personnel → Duty types → Schedule.",
+                                                 "Data stays on this PC."
+                                             ]
+                                  },
+                       "actions":  [
+                                       {
+                                           "label":  {
+                                                         "hy":  "Հիմնական",
+                                                         "ru":  "Главная",
+                                                         "en":  "Home"
+                                                     },
+                                           "page":  "home"
+                                       }
+                                   ]
+                   },
+                   {
+                       "id":  "people",
+                       "title":  {
+                                     "hy":  "Անձնակազմ",
+                                     "ru":  "Личный состав",
+                                     "en":  "Personnel"
+                                 },
+                       "keywords":  [
+                                        "անձ",
+                                        "անձնակազմ",
+                                        "мարդ",
+                                        "личный",
+                                        "состав",
+                                        "personnel",
+                                        "people",
+                                        "soldier",
+                                        "զինծառայող",
+                                        "ավելացնել անձ"
+                                    ],
+                       "answer":  {
+                                      "hy":  [
+                                                 "Մենյու → Հաշվառում → Անձնակազմ։",
+                                                 "Լրացրեք Ա․Ա․Հ․, կոչում, ստորաբաժանում, անհարմար օրեր։",
+                                                 "Անձի քարտ՝ PDF, տույժեր, խրախուսանքներ, բնութագիր։",
+                                                 "Գրաֆիկում երևալու համար անձը պետք է լինի ցուցակում։"
+                                             ],
+                                      "ru":  [
+                                                 "Меню → Учёт → Личный состав.",
+                                                 "ФИО, звание, подразделение, неудобные дни.",
+                                                 "Карточка: PDF, взыскания, поощрения, характеристика.",
+                                                 "Чтобы попасть в график, человек должен быть в списке."
+                                             ],
+                                      "en":  [
+                                                 "Menu → Accounting → Personnel.",
+                                                 "Add full name, rank, unit, unavailable days.",
+                                                 "Person card: PDF, penalties, awards, characteristics.",
+                                                 "They must be listed to appear on the schedule."
+                                             ]
+                                  },
+                       "actions":  [
+                                       {
+                                           "label":  {
+                                                         "hy":  "Բացել",
+                                                         "ru":  "Открыть",
+                                                         "en":  "Open"
+                                                     },
+                                           "page":  "people"
+                                       }
+                                   ]
+                   },
+                   {
+                       "id":  "schedule",
+                       "title":  {
+                                     "hy":  "Վերակարգի գրաֆիկ",
+                                     "ru":  "График нарядов",
+                                     "en":  "Duty schedule"
+                                 },
+                       "keywords":  [
+                                        "գրաֆիկ",
+                                        "վերակարգ",
+                                        "պլանավորում",
+                                        "график",
+                                        "наряд",
+                                        "планирование",
+                                        "schedule",
+                                        "duty",
+                                        "roster",
+                                        "ավտոմատ"
+                                    ],
+                       "answer":  {
+                                      "hy":  [
+                                                 "Նախ՝ անձնակազմ և վերակարգի տեսակ։",
+                                                 "Վերակարգի պլանավորում → ամիս/տարի → Կառուցել կամ Ավտոմատ։",
+                                                 "Ստուգեք վանդակները, Պահպանեք / Տպեք։",
+                                                 "Formal տվյալները պահվում են յուրաքանչյուր գրաֆիկի համար առանձին։"
+                                             ],
+                                      "ru":  [
+                                                 "Сначала личный состав и тип наряда.",
+                                                 "Планирование → месяц/год → Построить или Авто.",
+                                                 "Проверьте ячейки, Сохранить / Печать.",
+                                                 "Formal-данные хранятся отдельно для каждого графика."
+                                             ],
+                                      "en":  [
+                                                 "First set personnel and a duty type.",
+                                                 "Schedule → month/year → Build or Auto.",
+                                                 "Check cells, then Save / Print.",
+                                                 "Formal data is stored per graph."
+                                             ]
+                                  },
+                       "actions":  [
+                                       {
+                                           "label":  {
+                                                         "hy":  "Տեսակներ",
+                                                         "ru":  "Типы",
+                                                         "en":  "Types"
+                                                     },
+                                           "page":  "dutyTypes"
+                                       },
+                                       {
+                                           "label":  {
+                                                         "hy":  "Պլանավորում",
+                                                         "ru":  "Планирование",
+                                                         "en":  "Schedule"
+                                                     },
+                                           "page":  "schedule"
+                                       }
+                                   ]
+                   },
+                   {
+                       "id":  "dutyTypes",
+                       "title":  {
+                                     "hy":  "Վերակարգերի տեսակներ",
+                                     "ru":  "Типы нарядов",
+                                     "en":  "Duty types"
+                                 },
+                       "keywords":  [
+                                        "տեսակ",
+                                        "վերակարգերի տեսակ",
+                                        "тип наряда",
+                                        "duty type",
+                                        "types"
+                                    ],
+                       "answer":  {
+                                      "hy":  [
+                                                 "Մենյու → Վերակարգերի տեսակներ։",
+                                                 "Ստեղծեք տեսակ՝ անուն, կանոններ, պաշտոններ։",
+                                                 "Այնուհետև անցեք Պլանավորում։"
+                                             ],
+                                      "ru":  [
+                                                 "Меню → Типы нарядов.",
+                                                 "Создайте тип: имя, правила, должности.",
+                                                 "Затем откройте Планирование."
+                                             ],
+                                      "en":  [
+                                                 "Menu → Duty types.",
+                                                 "Create a type: name, rules, posts.",
+                                                 "Then open Schedule."
+                                             ]
+                                  },
+                       "actions":  [
+                                       {
+                                           "label":  {
+                                                         "hy":  "Բացել",
+                                                         "ru":  "Открыть",
+                                                         "en":  "Open"
+                                                     },
+                                           "page":  "dutyTypes"
+                                       }
+                                   ]
+                   },
+                   {
+                       "id":  "accounting",
+                       "title":  {
+                                     "hy":  "Հաշվառում",
+                                     "ru":  "Учёт",
+                                     "en":  "Accounting"
+                                 },
+                       "keywords":  [
+                                        "հաշվառում",
+                                        "учёт",
+                                        "учет",
+                                        "accounting",
+                                        "պաշտոն",
+                                        "должность",
+                                        "positions",
+                                        "troop"
+                                    ],
+                       "answer":  {
+                                      "hy":  [
+                                                 "Հաշվառում՝ անձնակազմ, պաշտոն, արձակուրդ, շարային տեղեկագիր, բուժկետ, քարտադարան, կոչումներ։",
+                                                 "Պաշտոններից կարելի է կապել անձանց շտատային կառուցվածքին։"
+                                             ],
+                                      "ru":  [
+                                                 "Учёт: личный состав, должности, отпуск, строевая, медпункт, досье, звания.",
+                                                 "Должности связывают людей со штатом."
+                                             ],
+                                      "en":  [
+                                                 "Accounting includes personnel, positions, leave, formation, medical, dossiers, ranks.",
+                                                 "Positions link people to the unit structure."
+                                             ]
+                                  },
+                       "actions":  [
+                                       {
+                                           "label":  {
+                                                         "hy":  "Հաշվառում",
+                                                         "ru":  "Учёт",
+                                                         "en":  "Accounting"
+                                                     },
+                                           "page":  "accounting"
+                                       }
+                                   ]
+                   },
+                   {
+                       "id":  "positions",
+                       "title":  {
+                                     "hy":  "Պաշտոններ",
+                                     "ru":  "Должности",
+                                     "en":  "Positions"
+                                 },
+                       "keywords":  [
+                                        "պաշտոն",
+                                        "շտատ",
+                                        "должность",
+                                        "штат",
+                                        "position",
+                                        "shtat"
+                                    ],
+                       "answer":  {
+                                      "hy":  [
+                                                 "Հաշվառում → Պաշտոն։",
+                                                 "Կարող եք նշանակել անձի պաշտոն, տեսնել թափուր տեղեր, արտահանել։"
+                                             ],
+                                      "ru":  [
+                                                 "Учёт → Должности.",
+                                                 "Назначайте людей, смотрите вакансии, экспортируйте."
+                                             ],
+                                      "en":  [
+                                                 "Accounting → Positions.",
+                                                 "Assign people, see vacancies, export."
+                                             ]
+                                  },
+                       "actions":  [
+                                       {
+                                           "label":  {
+                                                         "hy":  "Պաշտոն",
+                                                         "ru":  "Должности",
+                                                         "en":  "Positions"
+                                                     },
+                                           "page":  "positions"
+                                       }
+                                   ]
+                   },
+                   {
+                       "id":  "vacations",
+                       "title":  {
+                                     "hy":  "Արձակուրդ",
+                                     "ru":  "Отпуск",
+                                     "en":  "Leave / vacation"
+                                 },
+                       "keywords":  [
+                                        "արձակուրդ",
+                                        "отпуск",
+                                        "vacation",
+                                        "leave",
+                                        "հերթափոխ"
+                                    ],
+                       "answer":  {
+                                      "hy":  [
+                                                 "Հաշվառում → Արձակուրդ կամ Արձակուրդների հերթափոխ։",
+                                                 "Իրավունքների բաժնում կա նաև արձակուրդների հաշվիչ։"
+                                             ],
+                                      "ru":  [
+                                                 "Учёт → Отпуск или очередь отпусков.",
+                                                 "В правах военнослужащего есть калькулятор отпуска."
+                                             ],
+                                      "en":  [
+                                                 "Accounting → Leave or leave rotation.",
+                                                 "Soldier rights also has a leave calculator."
+                                             ]
+                                  },
+                       "actions":  [
+                                       {
+                                           "label":  {
+                                                         "hy":  "Արձակուրդ",
+                                                         "ru":  "Отпуск",
+                                                         "en":  "Leave"
+                                                     },
+                                           "page":  "vacations"
+                                       }
+                                   ]
+                   },
+                   {
+                       "id":  "library",
+                       "title":  {
+                                     "hy":  "ԳՐԱԴԱՐԱՆ",
+                                     "ru":  "Библиотека и инструменты",
+                                     "en":  "Library and tools"
+                                 },
+                       "keywords":  [
+                                        "գրադարան",
+                                        "ֆայլ",
+                                        "библиотека",
+                                        "файл",
+                                        "library",
+                                        "files",
+                                        "նշում",
+                                        "архив",
+                                        "archive"
+                                    ],
+                       "answer":  {
+                                      "hy":  [
+                                                 "Գրադարան՝ ֆայլեր, նշումներ, հաշվետվություններ, USB, ցանց, արխիվ, փոխակերպում։",
+                                                 "Ադմինը տեսնում է նաև ֆոնտեր և համակարգի տեղեկություն։"
+                                             ],
+                                      "ru":  [
+                                                 "Библиотека: файлы, заметки, отчёты, USB, сеть, архив, конвертация.",
+                                                 "Админ также видит шрифты и сведения о системе."
+                                             ],
+                                      "en":  [
+                                                 "Library: files, notes, reports, USB, network, archive, convert.",
+                                                 "Admin also sees fonts and system info."
+                                             ]
+                                  },
+                       "actions":  [
+                                       {
+                                           "label":  {
+                                                         "hy":  "Գրադարան",
+                                                         "ru":  "Библиотека",
+                                                         "en":  "Library"
+                                                     },
+                                           "page":  "library"
+                                       }
+                                   ]
+                   },
+                   {
+                       "id":  "reports",
+                       "title":  {
+                                     "hy":  "Հաշվետվություններ",
+                                     "ru":  "Отчёты",
+                                     "en":  "Reports"
+                                 },
+                       "keywords":  [
+                                        "հաշվետվություն",
+                                        "վիճակագրություն",
+                                        "отчёт",
+                                        "статистика",
+                                        "report",
+                                        "analytics",
+                                        "ամսական"
+                                    ],
+                       "answer":  {
+                                      "hy":  [
+                                                 "Գրադարան → Հաշվետվություններ՝ վիճակագրություն, ամսական, համեմատություն, փոխանակումներ։"
+                                             ],
+                                      "ru":  [
+                                                 "Библиотека → Отчёты: статистика, месячный, сравнение, замены."
+                                             ],
+                                      "en":  [
+                                                 "Library → Reports: analytics, monthly, compare, substitutions."
+                                             ]
+                                  },
+                       "actions":  [
+                                       {
+                                           "label":  {
+                                                         "hy":  "Հաշվետվություններ",
+                                                         "ru":  "Отчёты",
+                                                         "en":  "Reports"
+                                                     },
+                                           "page":  "reports"
+                                       }
+                                   ]
+                   },
+                   {
+                       "id":  "usb",
+                       "title":  {
+                                     "hy":  "USB և համաժամեցում",
+                                     "ru":  "USB и синхронизация",
+                                     "en":  "USB and sync"
+                                 },
+                       "keywords":  [
+                                        "usb",
+                                        "համաժամ",
+                                        "սինք",
+                                        "синхрон",
+                                        "sync",
+                                        "обмен",
+                                        "փոխանցել",
+                                        "import",
+                                        "export"
+                                    ],
+                       "answer":  {
+                                      "hy":  [
+                                                 "Գրադարան → USB կամ ցանց։",
+                                                 "KM_SYNC.json կամ .kmusb արտահանում/ներմուծում։",
+                                                 "Ցանցով կարելի է փոխանցել ֆայլեր և թարմացումներ տեղական ցանցում։"
+                                             ],
+                                      "ru":  [
+                                                 "Библиотека → USB или сеть.",
+                                                 "Экспорт/импорт KM_SYNC.json или .kmusb.",
+                                                 "По сети можно передавать файлы и обновления в LAN."
+                                             ],
+                                      "en":  [
+                                                 "Library → USB or network.",
+                                                 "Export/import KM_SYNC.json or .kmusb.",
+                                                 "Network transfer works on the local LAN."
+                                             ]
+                                  },
+                       "actions":  [
+                                       {
+                                           "label":  {
+                                                         "hy":  "Գրադարան",
+                                                         "ru":  "Библиотека",
+                                                         "en":  "Library"
+                                                     },
+                                           "page":  "library"
+                                       }
+                                   ]
+                   },
+                   {
+                       "id":  "lawdocs",
+                       "title":  {
+                                     "hy":  "Իրավաբանական անկյուն",
+                                     "ru":  "Юридический раздел",
+                                     "en":  "Legal corner"
+                                 },
+                       "keywords":  [
+                                        "իրավաբանական",
+                                        "օրենք",
+                                        "սահմանադրություն",
+                                        "юридич",
+                                        "закон",
+                                        "конституция",
+                                        "legal",
+                                        "law",
+                                        "codes"
+                                    ],
+                       "answer":  {
+                                      "hy":  [
+                                                 "Իրավաբանական անկյուն՝ Սահմանադրություն/օրենսգրքեր, կանոնադրություններ, հրամաններ, տույժեր, խրախուսանքներ, զինծառայողի իրավունքներ։",
+                                                 "Սեղմեք քարտը՝ բացելու փաստաթուղթը in-app դիտիչում։"
+                                             ],
+                                      "ru":  [
+                                                 "Юридический раздел: Конституция/кодексы, уставы, приказы, взыскания, поощрения, права военнослужащего.",
+                                                 "Нажмите карточку — документ откроется во встроенном просмотрщике."
+                                             ],
+                                      "en":  [
+                                                 "Legal corner: Constitution/codes, statutes, orders, penalties, awards, soldier rights.",
+                                                 "Click a card to open the document in the in-app viewer."
+                                             ]
+                                  },
+                       "actions":  [
+                                       {
+                                           "label":  {
+                                                         "hy":  "Բացել",
+                                                         "ru":  "Открыть",
+                                                         "en":  "Open"
+                                                     },
+                                           "page":  "lawdocs"
+                                       }
+                                   ]
+                   },
+                   {
+                       "id":  "soldier_rights",
+                       "title":  {
+                                     "hy":  "Զինծառայողի իրավունքներ",
+                                     "ru":  "Права военнослужащего",
+                                     "en":  "Soldier rights"
+                                 },
+                       "keywords":  [
+                                        "իրավունք",
+                                        "զինծառայող",
+                                        "права",
+                                        "военнослужащ",
+                                        "rights",
+                                        "soldier",
+                                        "զինապահ",
+                                        "բուժ",
+                                        "medical"
+                                    ],
+                       "answer":  {
+                                      "hy":  [
+                                                 "Իրավաբանական → Զինծառայողի իրավունքներ։",
+                                                 "Ենթաբաժիններ՝ բուժօգնություն, բնակարան, կրթություն, տրանսպորտ, արձակուրդ, վճարներ, ԶԻՆԱՊԱՀ, բողոքարկում, թեժ գծեր։",
+                                                 "Յուրաքանչյուր քարտ բացում է ուղեցույց (HTML/PDF)։"
+                                             ],
+                                      "ru":  [
+                                                 "Юридический → Права военнослужащего.",
+                                                 "Подразделы: медицина, жильё, образование, транспорт, отпуск, выплаты, ЗИНАПАХ, жалобы, горячие линии.",
+                                                 "Каждая карточка открывает руководство (HTML/PDF)."
+                                             ],
+                                      "en":  [
+                                                 "Legal → Soldier rights.",
+                                                 "Subsections: medical, housing, education, transport, leave, pay, ZINAPAH, complaints, hotlines.",
+                                                 "Each card opens a guide (HTML/PDF)."
+                                             ]
+                                  },
+                       "actions":  [
+                                       {
+                                           "label":  {
+                                                         "hy":  "Իրավունքներ",
+                                                         "ru":  "Права",
+                                                         "en":  "Rights"
+                                                     },
+                                           "page":  "lawdocs"
+                                       }
+                                   ]
+                   },
+                   {
+                       "id":  "admins",
+                       "title":  {
+                                     "hy":  "Ադմինիստրատորների վահանակ",
+                                     "ru":  "Панель администраторов",
+                                     "en":  "Administrators panel"
+                                 },
+                       "keywords":  [
+                                        "ադմին",
+                                        "ադմինիստրատոր",
+                                        "admin",
+                                        "админ",
+                                        "administrator",
+                                        "վահանակ"
+                                    ],
+                       "answer":  {
+                                      "hy":  [
+                                                 "Ադմինիստրատորների կառավարման վահանակում ավելացնում/խմբագրում եք ադմիններին և նրանց իրավունքները։",
+                                                 "Օգտատերերի էջերի թույլտվությունները՝ «Օգտատերեր» բաժնում։",
+                                                 "Օգնական բոտը («?») հասանելի է բոլոր դերերին։"
+                                             ],
+                                      "ru":  [
+                                                 "В панели администраторов добавляете/правите админов и их права.",
+                                                 "Права страниц пользователей — в разделе «Пользователи».",
+                                                 "Помощник («?») доступен всем ролям."
+                                             ],
+                                      "en":  [
+                                                 "The administrators panel adds/edits admins and their rights.",
+                                                 "User page grants are in the Users section.",
+                                                 "The “?” help bot is available to every role."
+                                             ]
+                                  },
+                       "actions":  [
+                                       {
+                                           "label":  {
+                                                         "hy":  "Ադմիններ",
+                                                         "ru":  "Админы",
+                                                         "en":  "Admins"
+                                                     },
+                                           "page":  "admins"
+                                       }
+                                   ]
+                   },
+                   {
+                       "id":  "users",
+                       "title":  {
+                                     "hy":  "Օգտատերեր և էջերի իրավունքներ",
+                                     "ru":  "Пользователи и права страниц",
+                                     "en":  "Users and page rights"
+                                 },
+                       "keywords":  [
+                                        "օգտատեր",
+                                        "իրավունք",
+                                        "թույլտվություն",
+                                        "գաղտնաբառ",
+                                        "փոխել գաղտնաբառ",
+                                        "парол",
+                                        "password",
+                                        "пользовател",
+                                        "права страниц",
+                                        "grant",
+                                        "permission",
+                                        "view only",
+                                        "միայն դիտել"
+                                    ],
+                       "answer":  {
+                                      "hy":  [
+                                                 "Ադմին → Օգտատերերի էջերի կառավարում → Էջերի իրավունքներ։",
+                                                 "Քայլ 1՝ Միայն դիտել կամ Փոփոխություններ կատարել։",
+                                                 "Քայլ 2՝ ընտրեք բաժինները և Հաստատել։",
+                                                 "Գաղտնաբառը փոխելու համար՝ նույն բաժնում ընտրեք օգտատիրոջը և նոր գաղտնաբառ։",
+                                                 "Օգնական բոտը («?») հասանելի է բոլորին։"
+                                             ],
+                                      "ru":  [
+                                                 "Админ → Управление страницами пользователей → Права страниц.",
+                                                 "Шаг 1: Только просмотр или Изменения.",
+                                                 "Шаг 2: выберите разделы и Подтвердить.",
+                                                 "Смена пароля: там же выберите пользователя и задайте новый пароль.",
+                                                 "Помощник («?») доступен всем."
+                                             ],
+                                      "en":  [
+                                                 "Admin → User pages management → Page rights.",
+                                                 "Step 1: View only or Make changes.",
+                                                 "Step 2: select sections and Confirm.",
+                                                 "To change a password: open the same page, select the user, set a new password.",
+                                                 "The “?” help bot is available to everyone."
+                                             ]
+                                  },
+                       "actions":  [
+                                       {
+                                           "label":  {
+                                                         "hy":  "Օգտատերեր",
+                                                         "ru":  "Пользователи",
+                                                         "en":  "Users"
+                                                     },
+                                           "page":  "users"
+                                       }
+                                   ]
+                   },
+                   {
+                       "id":  "unitTools",
+                       "title":  {
+                                     "hy":  "ԱՇԽԱՏԱՆՔԻ ԳՈՐԾԻՔՆԵՐ",
+                                     "ru":  "Рабочие инструменты",
+                                     "en":  "Work tools"
+                                 },
+                       "keywords":  [
+                                        "աշխատանքի գործիք",
+                                        "զորամաս",
+                                        "գործիք",
+                                        "инструмент",
+                                        "unit tools",
+                                        "work tools",
+                                        "վքն",
+                                        "օրվա կարգ",
+                                        "գույք",
+                                        "բնութագիր",
+                                        "характеристик",
+                                        "characteristic"
+                                    ],
+                       "answer":  {
+                                      "hy":  [
+                                                 "ԱՇԽԱՏԱՆՔԻ ԳՈՐԾԻՔՆԵՐ՝ փաստաթղթեր, ՎՔՆ, օրվա կարգացուցակ, գույք, ձևաթղթեր, անհարմար օրեր։",
+                                                 "Բնութագիր՝ նույն բաժնից կամ Իրավաբանական անկյունից՝ ընտրեք անձը և լրացրեք ձևաթուղթը։"
+                                             ],
+                                      "ru":  [
+                                                 "Рабочие инструменты: документы, ВКН, распорядок дня, имущество, бланки, неудобные дни.",
+                                                 "Характеристика — из этого раздела или Юридического блока: выберите человека и заполните бланк."
+                                             ],
+                                      "en":  [
+                                                 "Work tools: documents, fuel calc, day plan, inventory, blanks, unavailable days.",
+                                                 "Characteristics: from this section or Legal corner — pick a person and fill the form."
+                                             ]
+                                  },
+                       "actions":  [
+                                       {
+                                           "label":  {
+                                                         "hy":  "Գործիքներ",
+                                                         "ru":  "Инструменты",
+                                                         "en":  "Tools"
+                                                     },
+                                           "page":  "unitTools"
+                                       }
+                                   ]
+                   },
+                   {
+                       "id":  "save",
+                       "title":  {
+                                     "hy":  "Պահպանում և արխիվ",
+                                     "ru":  "Сохранение и архив",
+                                     "en":  "Save and archive"
+                                 },
+                       "keywords":  [
+                                        "պահպանել",
+                                        "արխիվ",
+                                        "сохранить",
+                                        "архив",
+                                        "save",
+                                        "backup",
+                                        "պահուստ"
+                                    ],
+                       "answer":  {
+                                      "hy":  [
+                                                 "Պահպանել կոճակը վերևում։",
+                                                 "Գրադարան → Ընթացիկ արխիվ / Արխիվ։",
+                                                 "USB արտահանումը լրացուցիչ պահուստ է։"
+                                             ],
+                                      "ru":  [
+                                                 "Кнопка Сохранить сверху.",
+                                                 "Библиотека → Текущий архив / Архив.",
+                                                 "USB-экспорт — дополнительная копия."
+                                             ],
+                                      "en":  [
+                                                 "Use Save at the top.",
+                                                 "Library → Current archive / Archive.",
+                                                 "USB export is an extra backup."
+                                             ]
+                                  },
+                       "actions":  [
+                                       {
+                                           "label":  {
+                                                         "hy":  "Գրադարան",
+                                                         "ru":  "Библиотека",
+                                                         "en":  "Library"
+                                                     },
+                                           "page":  "library"
+                                       }
+                                   ]
+                   },
+                   {
+                       "id":  "print",
+                       "title":  {
+                                     "hy":  "Տպում և PDF",
+                                     "ru":  "Печать и PDF",
+                                     "en":  "Print and PDF"
+                                 },
+                       "keywords":  [
+                                        "տպել",
+                                        "pdf",
+                                        "печать",
+                                        "print",
+                                        "экспорт"
+                                    ],
+                       "answer":  {
+                                      "hy":  [
+                                                 "Շատ բաժիններում կա Տպել / PDF։",
+                                                 "Գրաֆիկը, հաշվետվությունները և անձի քարտը կարելի է տպել կամ արտահանել։"
+                                             ],
+                                      "ru":  [
+                                                 "Во многих разделах есть Печать / PDF.",
+                                                 "График, отчёты и карточку можно печатать или экспортировать."
+                                             ],
+                                      "en":  [
+                                                 "Many sections have Print / PDF.",
+                                                 "Schedules, reports, and person cards can be printed or exported."
+                                             ]
+                                  },
+                       "actions":  [
+
+                                   ]
+                   },
+                   {
+                       "id":  "language",
+                       "title":  {
+                                     "hy":  "Լեզուներ",
+                                     "ru":  "Языки",
+                                     "en":  "Languages"
+                                 },
+                       "keywords":  [
+                                        "լեզու",
+                                        "язык",
+                                        "language",
+                                        "english",
+                                        "русский",
+                                        "հայերեն"
+                                    ],
+                       "answer":  {
+                                      "hy":  [
+                                                 "Վերևում՝ Լեզու / Язык / Language։",
+                                                 "Ընտրեք Հայերեն, Русский կամ English։",
+                                                 "Օգնական բոտը պատասխանում է ընտրված լեզվով։"
+                                             ],
+                                      "ru":  [
+                                                 "Сверху: Լեզու / Язык / Language.",
+                                                 "Выберите Հայերեն, Русский или English.",
+                                                 "Помощник отвечает на выбранном языке."
+                                             ],
+                                      "en":  [
+                                                 "Top bar: Լեզու / Язык / Language.",
+                                                 "Choose Armenian, Russian, or English.",
+                                                 "The help bot answers in the selected language."
+                                             ]
+                                  },
+                       "actions":  [
+
+                                   ]
+                   },
+                   {
+                       "id":  "bot",
+                       "title":  {
+                                     "hy":  "Ինչպես օգտագործել բոտը",
+                                     "ru":  "Как пользоваться ботом",
+                                     "en":  "How to use this bot"
+                                 },
+                       "keywords":  [
+                                        "բոտ",
+                                        "օգնական",
+                                        "помощник",
+                                        "assistant",
+                                        "bot",
+                                        "faq",
+                                        "օգտագործել բոտ",
+                                        "как пользоваться ботом",
+                                        "how to use bot"
+                                    ],
+                       "answer":  {
+                                      "hy":  [
+                                                 "Բացեք աջ ներքևի «?» կոճակը։",
+                                                 "Գրեք հարց կամ սեղմեք թեմաները։",
+                                                 "Երկրորդ սեղմումը կամ × փակում է վահանակը՝ էջը չի փոխվում։",
+                                                 "Աշխատում է offline, իսկ online-ում ավելացնում է լրացուցիչ գիտելիք։"
+                                             ],
+                                      "ru":  [
+                                                 "Откройте кнопку «?» справа внизу.",
+                                                 "Напишите вопрос или выберите темы.",
+                                                 "Повторное нажатие или × закрывает панель без смены страницы.",
+                                                 "Работает offline; online добавляет доп. знания."
+                                             ],
+                                      "en":  [
+                                                 "Open the bottom-right “?” button.",
+                                                 "Type a question or tap topics.",
+                                                 "Second click or × closes the panel without changing the page.",
+                                                 "Works offline; online adds extra knowledge."
+                                             ]
+                                  },
+                       "actions":  [
+
+                                   ]
+                   },
+                   {
+                       "id":  "characteristic",
+                       "title":  {
+                                     "hy":  "Բնութագիր",
+                                     "ru":  "Характеристика",
+                                     "en":  "Characteristic"
+                                 },
+                       "keywords":  [
+                                        "բնութագիր",
+                                        "характеристик",
+                                        "characteristic",
+                                        "անձի բնութագիր"
+                                    ],
+                       "answer":  {
+                                      "hy":  [
+                                                 "Բացեք ԱՇԽԱՏԱՆՔԻ ԳՈՐԾԻՔՆԵՐ → Բնութագիր (կամ Իրավաբանական անկյուն)։",
+                                                 "Ընտրեք անձը, լրացրեք դաշտերը և պահպանեք / արտահանեք PDF։"
+                                             ],
+                                      "ru":  [
+                                                 "Откройте Инструменты части → Характеристика (или Юридический раздел).",
+                                                 "Выберите человека, заполните поля и сохраните / экспортируйте PDF."
+                                             ],
+                                      "en":  [
+                                                 "Open Unit tools → Characteristic (or Legal corner).",
+                                                 "Select a person, fill the fields, then save / export PDF."
+                                             ]
+                                  },
+                       "actions":  [
+                                       {
+                                           "label":  {
+                                                         "hy":  "Բնութագիր",
+                                                         "ru":  "Характеристика",
+                                                         "en":  "Characteristic"
+                                                     },
+                                           "page":  "characteristic"
+                                       }
+                                   ]
+                   },
+                   {
+                       "id":  "discipline",
+                       "title":  {
+                                     "hy":  "Կարգապահական տույժեր",
+                                     "ru":  "Дисциплинарные взыскания",
+                                     "en":  "Disciplinary penalties"
+                                 },
+                       "keywords":  [
+                                        "տույժ",
+                                        "կարգապահ",
+                                        "взыскан",
+                                        "дисциплин",
+                                        "penalty",
+                                        "discipline"
+                                    ],
+                       "answer":  {
+                                      "hy":  [
+                                                 "Իրավաբանական անկյուն → Կարգապահական տույժեր։",
+                                                 "Կարող եք ավելացնել գրառում և կցել PDF։"
+                                             ],
+                                      "ru":  [
+                                                 "Юридический раздел → Дисциплинарные взыскания.",
+                                                 "Можно добавить запись и прикрепить PDF."
+                                             ],
+                                      "en":  [
+                                                 "Legal corner → Disciplinary penalties.",
+                                                 "Add records and attach PDF files."
+                                             ]
+                                  },
+                       "actions":  [
+                                       {
+                                           "label":  {
+                                                         "hy":  "Իրավաբանական",
+                                                         "ru":  "Юридический",
+                                                         "en":  "Legal"
+                                                     },
+                                           "page":  "lawdocs"
+                                       }
+                                   ]
+                   },
+                   {
+                       "id":  "network",
+                       "title":  {
+                                     "hy":  "Ցանց",
+                                     "ru":  "Сеть",
+                                     "en":  "Network"
+                                 },
+                       "keywords":  [
+                                        "ցանց",
+                                        "сеть",
+                                        "network",
+                                        "peer",
+                                        "ip",
+                                        "сервер"
+                                    ],
+                       "answer":  {
+                                      "hy":  [
+                                                 "Գրադարան → Ցանց և ֆայլեր։",
+                                                 "Կարող եք փոխանակել ֆայլեր և թարմացումներ տեղական ցանցով։"
+                                             ],
+                                      "ru":  [
+                                                 "Библиотека → Сеть и файлы.",
+                                                 "Обмен файлами и обновлениями по локальной сети."
+                                             ],
+                                      "en":  [
+                                                 "Library → Network and files.",
+                                                 "Exchange files and updates over the local network."
+                                             ]
+                                  },
+                       "actions":  [
+                                       {
+                                           "label":  {
+                                                         "hy":  "Ցանց",
+                                                         "ru":  "Сеть",
+                                                         "en":  "Network"
+                                                     },
+                                           "page":  "network"
+                                       }
+                                   ]
+                   },
+                   {
+                       "id":  "about",
+                       "title":  {
+                                     "hy":  "Ծրագրի մասին",
+                                     "ru":  "О программе",
+                                     "en":  "About"
+                                 },
+                       "keywords":  [
+                                        "ծրագրի մասին",
+                                        "տարբերակ",
+                                        "թարմացում",
+                                        "о программе",
+                                        "about",
+                                        "version"
+                                    ],
+                       "answer":  {
+                                      "hy":  [
+                                                 "Մենյու → Ծրագրի մասին՝ տարբերակ, թարմացում և համակարգի նկարագրություն։",
+                                                 "Վերևի Թարմացնել կոճակը ներբեռնում է նոր տարբերակը սերվերից։"
+                                             ],
+                                      "ru":  [
+                                                 "Меню → О программе: версия, обновление и описание.",
+                                                 "Кнопка Обновить сверху загружает новую версию с сервера."
+                                             ],
+                                      "en":  [
+                                                 "Menu → About: version, update, and system description.",
+                                                 "The top Update button downloads the new version from the server."
+                                             ]
+                                  },
+                       "actions":  [
+                                       {
+                                           "label":  {
+                                                         "hy":  "Ծրագրի մասին",
+                                                         "ru":  "О программе",
+                                                         "en":  "About"
+                                                     },
+                                           "page":  "about"
+                                       }
+                                   ]
+                   }
+               ],
+    "title":  {
+                  "hy":  "KM օգնական բոտ",
+                  "ru":  "KM помощник",
+                  "en":  "KM Help Bot"
+              },
+    "welcome":  {
+                    "hy":  "Ես KM օգնականն եմ։ Կարող եմ բացատրել գրաֆիկը, անձնակազմը, հաշվառումը, գրադարանը, իրավաբանական անկյունը, իրավունքները, USB/ցանցը և էջերի թույլտվությունները։ Գրեք հարց կամ ընտրեք թեմա։",
+                    "ru":  "Я помощник KM. Объясню график, личный состав, учёт, библиотеку, юридический раздел, права, USB/сеть и права страниц. Напишите вопрос или выберите тему.",
+                    "en":  "I am the KM assistant. I can explain schedules, personnel, accounting, library, legal corner, rights, USB/network, and page permissions. Ask a question or pick a topic."
+                },
+    "fallback":  {
+                     "hy":  "Եկեք շարունակենք։ Գրեք ձեր հարցը՝ ընդհանուր թեմա կամ KM աշխատանքային հարց։",
+                     "ru":  "Давайте продолжим. Напишите вопрос — общую тему или рабочий вопрос по KM.",
+                     "en":  "Let’s continue. Write your question — a general topic or a KM workplace question."
+                 }
+}

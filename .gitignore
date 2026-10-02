@@ -1,0 +1,57 @@
+# KM Desktop — local / secret artifacts (never ship in Setup)
+kodmutq/
+KM_MASTER_KEYS.txt
+_KM_SECURITY_KEYS_SUMMARY.txt
+app/km_gemini_keys.local.json
+km_install_secret.json
+km_integrity_local.json
+km_recovery.json
+KM_RECOVERY_CODE.txt
+_bytecode_out/
+app/_new_keys.json
+*.enc.bak
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+*.log
+
+# Build-time org/kod seed copied from live UserData (never commit unit codes)
+payload/seed/org/
+app/data/km_org_seed.json
+app/data/unit_kod_seed/
+app/data/unit_archives_seed/
+
+# Runtime UserData mirror (large; Electron caches if KM writes through junction)
+project-data/UserData/Cache/
+project-data/UserData/Code Cache/
+project-data/UserData/GPUCache/
+project-data/UserData/DawnCache/
+project-data/UserData/blob_storage/
+project-data/UserData/IndexedDB/
+project-data/UserData/Local Storage/
+project-data/UserData/Session Storage/
+project-data/UserData/WebStorage/
+project-data/UserData/Network/
+project-data/UserData/databases/
+project-data/UserData/*.db-shm
+project-data/UserData/*.db-wal
+
+# --- Added for GitHub upload (files >= 95 MB; exceed GitHub's 100 MB limit, not included in this copy) ---
+/dist/KM_Setup_x64.exe
+/payload/kod_codes.txt
+/payload/runtime/x64/electron.exe
+/payload/seed/BotKnowledge.7z
+/project-data/UserData/BotKnowledge/knowledge.db
+/project-data/UserData/BotKnowledge/qa.jsonl
+/scripts/kod_codes.txt
+
+# --- Junk / caches ---
+_cache/
+_bytecode_hot/
+node_modules/
+*.log
+
+# private user data
+project-data/UserData/

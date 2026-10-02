@@ -1,0 +1,16 @@
+---
+description: This Desktop folder is the only KM source — ignore all other copies
+alwaysApply: true
+---
+
+# KM workspace root — միակ հիմնական սերվեր
+
+Աշխատել միայն այս պանակում.
+
+`C:\Users\PUBG\OneDrive\Desktop\KM_1.009.4_SEPARATE_FORMAL_DATA_PER_GRAPH\KM_1.009.4_SEPARATE_FORMAL_DATA_PER_GRAPH`
+
+This folder is the **only** program source and the **main server**.
+
+- Do not read, compare, copy from, or edit any other KM copy (including `D:\cragrer 2025\...`, other Desktop copies, or old trees).
+- Do not mention or switch to other folders unless the user explicitly warns that the root has changed.
+- After app changes, bump Թարմացում and rebuild `dist\KM_Setup_x64.exe` with `BUILD_SETUP.ps1` (see km-rebuild-setup-x64).

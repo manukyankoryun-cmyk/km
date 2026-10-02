@@ -1,0 +1,54 @@
+KM 1.009.4 — նախագծի պանակների կառուցվածք
+================================================
+
+Հիմնական root / միակ սերվեր (այս պանակը).
+  C:\Users\PUBG\OneDrive\Desktop\KM_1.009.4_SEPARATE_FORMAL_DATA_PER_GRAPH\KM_1.009.4_SEPARATE_FORMAL_DATA_PER_GRAPH\
+
+Այլ KM պատճեններ չեն օգտագործվում։ Root փոխել միայն օգտատիրոջ հստակ նախազգուշացումից հետո։
+
+┌─ app\                          ← Electron/KM desktop runtime (ծրագրի կոդ)
+│   ├─ js\                       ← UI, Help Bot, գրաֆիկ, library
+│   ├─ data\                     ← JSON կոնֆիգ, bulk-import JSONL
+│   │   └─ bulk-import\          ← 700k curriculum import (npm run bot:import)
+│   ├─ scripts\                  ← bot:reindex, FTS, LAN setup
+│   ├─ docs\                     ← LAN_SETUP.md և այլն
+│   ├─ assets\                   ← icon, background images
+│   ├─ main.js, preload.js, index.html
+│   └─ package.json
+│
+├─ scripts\                      ← Build, test, icon, KOD (root-level dev scripts)
+├─ tools\                        ← PDF/font build helpers
+├─ dist\                         ← KM_Setup_x64.exe output
+├─ setup\                        ← NSIS header/welcome bitmaps
+├─ _cache\                       ← build cache (rcedit, png-to-ico)
+│
+├─ BUILD_SETUP.cmd               ← x64 installer build
+├─ VERIFY_FINAL_SETUP.cmd
+├─ KM_Setup_x64.nsi
+│
+└─ project-data\                 ← Dev mirror / backup (ստեղծվում է script-ով)
+    ├─ UserData\                 ← %LOCALAPPDATA%\KM\UserData-ի պատճեն
+    │   └─ BotKnowledge\
+    │       ├─ qa.jsonl
+    │       ├─ knowledge.db
+    │       └─ vectors\
+    └─ README.txt
+
+Կարևոր — runtime տվյալներ (աշխատանքային)
+------------------------------------------
+KM Desktop-ը գործարկման ժամանակ օգտագործում է.
+
+  %LOCALAPPDATA%\KM\UserData\
+
+  BotKnowledge\qa.jsonl      ← Help Bot 700k Q&A (FTS որոնում)
+  database_snapshot.json     ← գրաֆիկի հիմնական DB
+  km_settings.json           ← կարգավորումներ, chat memory
+  KM_Net\                    ← LAN sync inbox/outbox
+  Backups\                   ← ավտոպահուստ
+
+Installer-ը UserData-ն չի տեղադրում — այն մնում է AppData-ում։
+
+Տեղափոխում / համաձայնեցում
+---------------------------
+UserData-ն նախագծի մեջ պատճենել (backup/dev).
+   scripts\sync-project-data.ps1

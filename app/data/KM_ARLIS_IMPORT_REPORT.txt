@@ -1,0 +1,5 @@
+KM ARLIS import 2026-10-02T09:37:31.975Z
+Source: arlis.am; currency and completeness require independent legal review.
+IMPORTED act/77483 sections=laws chars=5731
+IMPORTED act/77482 sections=laws chars=4403
+TOTAL unique acts=1166 imported=2 cached=1164 failed=0

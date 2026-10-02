@@ -1,0 +1,34 @@
+{
+  "name": "km-desktop",
+  "version": "v1.0.1",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "test:guard-integrity": "node scripts/check-guard-integrity.mjs",
+    "start": "electron .",
+    "start:installed": "node ../scripts/start-km.cjs",
+    "seed:34day": "node scripts/seed-34day-knowledge.mjs",
+    "seed:34day:build": "node scripts/build-curriculum34-seed.cjs",
+    "bot:import": "node scripts/import-bot-knowledge.mjs",
+    "bot:reindex": "node scripts/reindex-bot-knowledge.mjs",
+    "bot:fts": "node scripts/rebuild-fts-until-complete.mjs",
+    "generate:700k": "node scripts/generate-curriculum-700k.mjs",
+    "generate:700k:resume": "node scripts/generate-curriculum-700k.mjs --resume",
+    "pipeline:700k": "node scripts/run-curriculum-pipeline.mjs",
+    "pipeline:700k:resume": "node scripts/run-curriculum-pipeline.mjs --resume --wiki",
+    "pipeline:700k:import": "node scripts/run-curriculum-pipeline.mjs --import-only",
+    "compile:bytecode": "node scripts/compile-bytecode.cjs",
+    "compile:bytecode:out": "node scripts/compile-bytecode.cjs --out ../_bytecode_out",
+    "compile:bytecode:electron": "node scripts/compile-bytecode.cjs --out ../_bytecode_out --electron-path ../payload/runtime/x64/electron.exe"
+  },
+  "dependencies": {
+    "@google/genai": "^2.19.0",
+    "bytenode": "^1.5.7"
+  },
+  "devDependencies": {
+    "electron": "^22.3.27"
+  },
+  "allowScripts": {
+    "electron@22.3.27": true
+  }
+}
