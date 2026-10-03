@@ -66,3 +66,6 @@ _bytecode_hot/
 /project-data/UserData/databases/
 /project-data/UserData/*.db-shm
 /project-data/UserData/*.db-wal
+
+# unit staffing roster (personal data)
+app/data/km_unit_archive_25836.json
