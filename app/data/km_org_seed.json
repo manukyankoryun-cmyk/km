@@ -1,0 +1,212 @@
+{
+  "at": "2026-10-02T21:50:13.946Z",
+  "corps": [
+    {
+      "id": "bk1",
+      "name": "1-ին բանակային կորպուս",
+      "kind": "corps",
+      "ord": 1
+    },
+    {
+      "id": "bk2",
+      "name": "2-րդ բանակային կորպուս",
+      "kind": "corps",
+      "ord": 2
+    },
+    {
+      "id": "bk3",
+      "name": "3-րդ բանակային կորպուս",
+      "kind": "corps",
+      "ord": 3
+    },
+    {
+      "id": "bk4",
+      "name": "4-րդ բանակային կորպուս",
+      "kind": "corps",
+      "ord": 4
+    },
+    {
+      "id": "bk5",
+      "name": "5-րդ բանակային կորպուս",
+      "kind": "corps",
+      "ord": 5
+    }
+  ],
+  "units": [
+    {
+      "id": "bk1_hq",
+      "corpsId": "bk1",
+      "name": "Կորպուսի շտաբ"
+    },
+    {
+      "id": "bk1_u1",
+      "corpsId": "bk1",
+      "name": "1-ին զորամաս"
+    },
+    {
+      "id": "bk1_u2",
+      "corpsId": "bk1",
+      "name": "2-րդ զորամաս"
+    },
+    {
+      "id": "bk1_u3",
+      "corpsId": "bk1",
+      "name": "3-րդ զորամաս"
+    },
+    {
+      "id": "bk1_u4",
+      "corpsId": "bk1",
+      "name": "4-րդ զորամաս"
+    },
+    {
+      "id": "bk1_u5",
+      "corpsId": "bk1",
+      "name": "5-րդ զորամաս"
+    },
+    {
+      "id": "bk1_u6",
+      "corpsId": "bk1",
+      "name": "6-րդ զորամաս"
+    },
+    {
+      "id": "bk2_hq",
+      "corpsId": "bk2",
+      "name": "Կորպուսի շտաբ"
+    },
+    {
+      "id": "bk2_u1",
+      "corpsId": "bk2",
+      "name": "ՀՀ ՊՆ 25836 Զորամաս"
+    },
+    {
+      "id": "bk2_u2",
+      "corpsId": "bk2",
+      "name": "2-րդ զորամաս"
+    },
+    {
+      "id": "bk2_u3",
+      "corpsId": "bk2",
+      "name": "3-րդ զորամաս"
+    },
+    {
+      "id": "bk2_u4",
+      "corpsId": "bk2",
+      "name": "4-րդ զորամաս"
+    },
+    {
+      "id": "bk2_u5",
+      "corpsId": "bk2",
+      "name": "5-րդ զորամաս"
+    },
+    {
+      "id": "bk2_u6",
+      "corpsId": "bk2",
+      "name": "6-րդ զորամաս"
+    },
+    {
+      "id": "bk3_hq",
+      "corpsId": "bk3",
+      "name": "Կորպուսի շտաբ"
+    },
+    {
+      "id": "bk3_u1",
+      "corpsId": "bk3",
+      "name": "1-ին զորամաս"
+    },
+    {
+      "id": "bk3_u2",
+      "corpsId": "bk3",
+      "name": "2-րդ զորամաս"
+    },
+    {
+      "id": "bk3_u3",
+      "corpsId": "bk3",
+      "name": "3-րդ զորամաս"
+    },
+    {
+      "id": "bk3_u4",
+      "corpsId": "bk3",
+      "name": "4-րդ զորամաս"
+    },
+    {
+      "id": "bk3_u5",
+      "corpsId": "bk3",
+      "name": "5-րդ զորամաս"
+    },
+    {
+      "id": "bk3_u6",
+      "corpsId": "bk3",
+      "name": "6-րդ զորամաս"
+    },
+    {
+      "id": "bk4_hq",
+      "corpsId": "bk4",
+      "name": "Կորպուսի շտաբ"
+    },
+    {
+      "id": "bk4_u1",
+      "corpsId": "bk4",
+      "name": "1-ին զորամաս"
+    },
+    {
+      "id": "bk4_u2",
+      "corpsId": "bk4",
+      "name": "2-րդ զորամաս"
+    },
+    {
+      "id": "bk4_u3",
+      "corpsId": "bk4",
+      "name": "3-րդ զորամաս"
+    },
+    {
+      "id": "bk4_u4",
+      "corpsId": "bk4",
+      "name": "4-րդ զորամաս"
+    },
+    {
+      "id": "bk4_u5",
+      "corpsId": "bk4",
+      "name": "5-րդ զորամաս"
+    },
+    {
+      "id": "bk4_u6",
+      "corpsId": "bk4",
+      "name": "6-րդ զորամաս"
+    },
+    {
+      "id": "bk5_hq",
+      "corpsId": "bk5",
+      "name": "Կորպուսի շտաբ"
+    },
+    {
+      "id": "bk5_u1",
+      "corpsId": "bk5",
+      "name": "1-ին զորամաս"
+    },
+    {
+      "id": "bk5_u2",
+      "corpsId": "bk5",
+      "name": "2-րդ զորամաս"
+    },
+    {
+      "id": "bk5_u3",
+      "corpsId": "bk5",
+      "name": "3-րդ զորամաս"
+    },
+    {
+      "id": "bk5_u4",
+      "corpsId": "bk5",
+      "name": "4-րդ զորամաս"
+    },
+    {
+      "id": "bk5_u5",
+      "corpsId": "bk5",
+      "name": "5-րդ զորամաս"
+    },
+    {
+      "id": "bk5_u6",
+      "corpsId": "bk5",
+      "name": "6-րդ զորամաս"
+    }
+  ]
+}

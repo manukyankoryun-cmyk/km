@@ -1,0 +1,13 @@
+{
+  "id": "19e1ef912552149a",
+  "name": "DESKTOP-N3N3D6B",
+  "mode": "local",
+  "port": 18094,
+  "udpPort": 18095,
+  "code": "",
+  "listening": false,
+  "autoSearch": false,
+  "knownPeers": [],
+  "reportToAdmin": true,
+  "updateServer": false
+}
